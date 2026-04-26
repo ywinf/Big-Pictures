@@ -28,7 +28,7 @@ AUTOSAR
 <img width="4961" height="3508" alt="screenshot_Big4" src="https://github.com/user-attachments/assets/0ca8862e-e043-4603-9037-8cdf6cad1254" />
 
 Functional Safety
-<img width="2382" height="1684" alt="FuSa BigPicture" src="https://github.com/user-attachments/assets/dac89704-54ae-4b8e-880e-cc98543b4c5c" />
+<img width="2383" height="1685" alt="FuSa BigPicture" src="https://github.com/user-attachments/assets/8540b496-4423-47de-ba4c-7de7994680fe" />
 
 From Turing Machine to a complete CPU
 <img width="2383" height="1685" alt="Build_a_computer_bigpicture" src="https://github.com/user-attachments/assets/3c836c21-45be-46dc-ba8c-8d2a61943337" />
