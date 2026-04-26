@@ -1,4 +1,6 @@
-🧠 Big Pictures for Complex Systems: turning complex systems into clear mental models.
+🧠 Big Pictures for Complex Systems
+
+Making complexity understandable — one page at a time.
 
 Complex systems are hard to understand — not because information is missing,
 but because the overall structure is not visible.
@@ -15,14 +17,25 @@ Connect concepts, architecture, and implementation
 Provide a clear mental model
 Bridge theory and real-world engineering
 
-They are not detailed specifications —
-they are tools to think, structure, and communicate complexity.
+These are not summaries of standards —
+they are system-level explanations of how things actually work.
+
+📌 Examples
+
+(Preview — open images in full resolution for details)
+
+Functional Safety
+
+Automotive Cybersecurity
+
+AUTOSAR
 
 🌍 Scope
 
-The Big Pictures in this repository cover different domains, for example:
+The Big Pictures in this repository cover multiple domains,
+including, but not limited to:
 
-Automotive systems (e.g. Functional Safety, Cybersecurity, AUTOSAR)
+Automotive systems (Functional Safety, Cybersecurity, AUTOSAR)
 Software architecture & system design
 Computer fundamentals and computing models
 General engineering and technical concepts
@@ -43,23 +56,25 @@ Making structure visible
 Reducing cognitive load
 Enabling faster onboarding
 Supporting system-level thinking
+Bridging different roles (architects, developers, engineers, management)
 📄 High-Resolution Versions
 
 All Big Pictures are available in high-resolution PDF format.
 
-👉 Browse the folders to explore and download.
+👉 Browse the repository folders to explore and download.
 
 💡 How to use
 Learn a topic quickly
 Align teams on system understanding
 Support architecture discussions
-Bridge different roles (engineering, safety, security, management)
+Use as a teaching or onboarding tool
+Bridge theory and implementation
 👥 Feedback & Discussion
 
-Feedback and different perspectives are very welcome.
+Feedback, different perspectives, and real-world experience are very welcome.
 
 Open an issue
-Share ideas
+Share your thoughts
 Or connect via LinkedIn
 
 🔗 Author
