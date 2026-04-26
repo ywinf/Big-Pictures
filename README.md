@@ -61,7 +61,7 @@ Feedback and different perspectives are very welcome.
 Open an issue
 Share ideas
 Or connect via LinkedIn
-🔗 Author
 
+🔗 Author
 Yingtao Wang
 System Architect | Vehicle Software Platforms | Complex Systems Thinking
