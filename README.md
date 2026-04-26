@@ -1,4 +1,4 @@
-🧠 Big Pictures for Complex Systems: urning complex systems into clear mental models.
+🧠 Big Pictures for Complex Systems: turning complex systems into clear mental models.
 
 Complex systems are hard to understand — not because information is missing,
 but because the overall structure is not visible.
