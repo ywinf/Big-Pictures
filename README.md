@@ -25,10 +25,11 @@ they are system-level explanations of how things actually work.
 (Preview — open images in full resolution for details)
 
 Functional Safety
-
-Automotive Cybersecurity
+<img width="2382" height="1684" alt="FuSa BigPicture" src="https://github.com/user-attachments/assets/dac89704-54ae-4b8e-880e-cc98543b4c5c" />
 
 AUTOSAR
+<img width="4961" height="3508" alt="screenshot_Big4" src="https://github.com/user-attachments/assets/0ca8862e-e043-4603-9037-8cdf6cad1254" />
+
 
 🌍 Scope
 
