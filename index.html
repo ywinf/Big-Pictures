@@ -84,7 +84,7 @@
       grid-template-columns: 170px minmax(0, 1fr);
       gap: 38px;
       align-items: center;
-      margin-top: 110px;
+      margin-top: 90px;
       max-width: 1060px;
     }
 
@@ -275,6 +275,44 @@
       gap: 14px;
     }
 
+    .impact {
+      margin: 0 0 76px;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .impact-item {
+      padding: 24px;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .impact-item b {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+      margin-bottom: 12px;
+      color: var(--accent-2);
+    }
+
+    .impact-item span {
+      display: block;
+      color: var(--text);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .impact-item p {
+      font-size: 14px;
+      margin: 0;
+    }
+
     .stat {
       padding: 18px;
       border-radius: 18px;
@@ -373,7 +411,7 @@
       .picture:nth-child(even) .picture-media { order: initial; }
       .nav { align-items: flex-start; border-radius: 22px; }
       .nav-links { display: none; }
-      .stats { grid-template-columns: 1fr; }
+      .stats, .impact-grid { grid-template-columns: 1fr; }
       .highlight-media a { width: 100%; }
     }
 
@@ -385,7 +423,6 @@
       .picture-media a { min-height: 210px; }
       .section-head { display: block; }
     }
-    
   </style>
 </head>
 <body>
@@ -410,7 +447,9 @@
           <div class="eyebrow">Principal Automotive Software Architect · Big-Picture Methodology Creator</div>
           <h1>Making complex vehicle software visible, understandable and actionable.</h1>
           <p class="subtitle">I create professional Big Pictures for AI-enabled automotive systems, AUTOSAR CP/AP, Functional Safety and Cybersecurity — helping engineers, architects and leaders build a shared mental model fast.</p>
+          <p style="margin-top:-10px; color:#9fd4ff; font-weight:700;">The success of AI in vehicles is not defined by the model — but by the architecture that integrates it.</p>
           <div class="hero-proof">
+            <div class="hero-proof">
             <span class="proof-pill">AUTOSAR CP/AP</span>
             <span class="proof-pill">Functional Safety</span>
             <span class="proof-pill">Cybersecurity</span>
@@ -418,10 +457,10 @@
             <span class="proof-pill">Industry-recognized work</span>
           </div>
           <div class="hero-actions">
-            <a class="btn primary" href="#highlight">Highlight</a>
             <a class="btn primary" href="#pictures">Explore Big Pictures</a>
+            <a class="btn" href="#highlight">Industry Recognition</a>
             <a class="btn" href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">View GitHub Repo</a>
-            <a class="btn" href="https://www.linkedin.com/in/yingtao-wang" target="_blank" rel="noopener">Linkedin Profile</a>
+            <a class="btn" href="https://www.linkedin.com/in/yingtao-wang" target="_blank" rel="noopener">LinkedIn Profile</a>
           </div>
         </div>
       </section>
@@ -465,6 +504,37 @@
           <a href="https://www.autosar.org/news-events/detail/success-story-of-stellantis-big-pictures-for-autosar-cp-ap" target="_blank" rel="noopener" aria-label="Open official AUTOSAR success story">
             <img src="assets/autosar-success.png" alt="AUTOSAR Success Story Big Pictures for AUTOSAR CP and AP" />
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact" aria-label="Impact and results">
+      <div class="section-head">
+        <div>
+          <h2>Impact & Results</h2>
+          <p>Big Pictures are not only visuals — they are practical tools for alignment, onboarding, architectural discussions and decision-making in complex automotive software environments.</p>
+        </div>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <b>Official</b>
+          <span>Industry recognition</span>
+          <p>AUTOSAR published the CP/AP Big Pictures as a success story, validating the value of structured visual methodology.</p>
+        </div>
+        <div class="impact-item">
+          <b>Fast</b>
+          <span>Shared understanding</span>
+          <p>Complex topics become easier to explain across engineering, architecture, management and cross-functional teams.</p>
+        </div>
+        <div class="impact-item">
+          <b>Broad</b>
+          <span>System-level coverage</span>
+          <p>From AUTOSAR, FuSa, Cybersecurity and AI in SDV to CPU fundamentals, source-code execution, Git and build systems.</p>
+        </div>
+        <div class="impact-item">
+          <b>Useful</b>
+          <span>Practical engineering value</span>
+          <p>Designed for real project discussions, onboarding, reviews, architecture clarification and technical leadership.</p>
         </div>
       </div>
     </section>
