@@ -48,7 +48,7 @@
       inset: 0;
       background:
         linear-gradient(120deg, rgba(6,18,38,.92), rgba(10,32,68,.75) 50%, rgba(5,10,20,.95)),
-        url("assets/hero-tech-bg.jpg") center/cover no-repeat;
+        url("assets/hero-tech-bg.png") center/cover no-repeat;
       transform: scale(1.02);
     }
 
@@ -176,8 +176,8 @@
 
     .highlight-inner {
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 28px;
       align-items: center;
       padding: 30px;
       border-radius: var(--radius);
@@ -204,20 +204,22 @@
 
     .highlight p { max-width: 760px; margin-bottom: 0; }
 
-    .highlight-badge {
-      min-width: 150px;
-      min-height: 150px;
-      border-radius: 26px;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 18px;
-      background: rgba(77,163,255,.12);
-      border: 1px solid rgba(77,163,255,.35);
-      color: #dff0ff;
-      font-weight: 900;
-      box-shadow: inset 0 0 40px rgba(77,163,255,.08);
+    .highlight-media a {
+      display: block;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: #07111f;
+      box-shadow: 0 20px 50px rgba(0,0,0,.4);
     }
+
+    .highlight-media img {
+      width: 100%;
+      height: auto;
+      transition: transform .25s ease;
+    }
+
+    .highlight-media a:hover img { transform: scale(1.02); }
 
     .card {
       background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
@@ -371,7 +373,7 @@
       .nav { align-items: flex-start; border-radius: 22px; }
       .nav-links { display: none; }
       .stats { grid-template-columns: 1fr; }
-      .highlight-badge { min-width: 100%; min-height: 100px; }
+      .highlight-media a { width: 100%; }
     }
 
     @media (max-width: 480px) {
@@ -422,8 +424,10 @@
             <span class="proof-pill">Industry-recognized work</span>
           </div>
           <div class="hero-actions">
+            <a class="btn primary" href="#highlight">Highlight</a>
             <a class="btn primary" href="#pictures">Explore Big Pictures</a>
             <a class="btn" href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">View GitHub Repo</a>
+            <a class="btn" href="https://www.linkedin.com/in/yingtao-wang" target="_blank" rel="noopener">Linkedin Profile</a>
           </div>
         </div>
       </section>
@@ -454,14 +458,20 @@
       </div>
     </section>
 
-    <section class="highlight" aria-label="Industry recognition highlight">
+    <section id="highlight" class="highlight" aria-label="Industry recognition highlight">
       <div class="highlight-inner">
         <div>
           <div class="highlight-kicker">Industry recognition</div>
-          <h3>AUTOSAR Big Pictures published as an official AUTOSAR success story</h3>
-          <p>The AUTOSAR CP/AP Big Pictures were recognized and published by the AUTOSAR Consortium — a strong external validation that the Big-Picture Methodology can help engineers, architects and managers understand complex automotive software ecosystems faster.</p>
+          <h3>AUTOSAR Success Story: Big Pictures for CP & AP</h3>
+          <p>The Big-Picture Methodology was officially recognized and published by AUTOSAR. This success story highlights how complex AUTOSAR CP/AP concepts can be understood quickly through structured one-page visual models.</p>
+          <br />
+          <a class="btn primary" href="https://www.autosar.org/news-events/detail/success-story-of-stellantis-big-pictures-for-autosar-cp-ap" target="_blank" rel="noopener">Read official AUTOSAR story</a>
         </div>
-        <a class="highlight-badge" href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">AUTOSAR<br />Success<br />Story</a>
+        <div class="highlight-media">
+          <a href="https://www.autosar.org/news-events/detail/success-story-of-stellantis-big-pictures-for-autosar-cp-ap" target="_blank" rel="noopener" aria-label="Open official AUTOSAR success story">
+            <img src="assets/autosar-success.png" alt="AUTOSAR Success Story Big Pictures for AUTOSAR CP and AP" />
+          </a>
+        </div>
       </div>
     </section>
 
@@ -474,60 +484,109 @@
       </div>
 
       <div class="picture-list">
+
+        <!-- AUTOSAR -->
         <article class="picture">
           <div class="picture-copy">
             <h3>AUTOSAR CP/AP Big Pictures</h3>
-            <p>A compact overview of AUTOSAR Classic and Adaptive methodology, showing the system description flow, major artifacts and how CP/AP concepts fit together.</p>
-            <div class="tag-row"><span class="tag">AUTOSAR Classic</span><span class="tag">AUTOSAR Adaptive</span><span class="tag">Methodology</span></div>
-            <a class="btn" href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">Open AUTOSAR Big Pictures</a>
-          </div>
+            <p>A compact and structured overview of AUTOSAR Classic and Adaptive methodology, showing system description flow, architecture layers and how CP/AP concepts fit together in real projects.</p>
+            <div class="tag-row"><span class="tag">AUTOSAR</span><span class="tag">CP/AP</span><span class="tag">Architecture</span></div>
+              <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Automotive/AUTOSAR" target="_blank" rel="noopener">Open AUTOSAR Big Pictures</a>
+            </div>
           <div class="picture-media">
-            <a href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener" aria-label="Open AUTOSAR Big Picture">
-              <img src="assets/autosar-preview.jpg" alt="AUTOSAR Big Picture preview" />
-            </a>
-          </div>
+            <a href="https://github.com/ywinf/Big-Pictures/tree/main/Automotive/AUTOSAR" target="_blank" rel="noopener" aria-label="Open AUTOSAR Big Picture">
+            <img src="assets/autosar-preview.png" /></a></div>
         </article>
 
+        <!-- FuSa -->
         <article class="picture">
           <div class="picture-copy">
-            <h3>Functional Safety Big Picture</h3>
-            <p>A practical ISO 26262 mental model: from item definition, HARA and safety goals to architecture, implementation, verification, safety case and assessment.</p>
-            <div class="tag-row"><span class="tag">ISO 26262</span><span class="tag">ASIL</span><span class="tag">Safety Case</span></div>
-            <a class="btn" href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">Open FuSa Big Picture</a>
-          </div>
+            <h3>Functional Safety (ISO 26262)</h3>
+            <p>A practical lifecycle view of ISO 26262 — from HARA and safety goals to architecture, implementation, verification and safety case — focused on real engineering decisions.</p>
+            <div class="tag-row"><span class="tag">ISO 26262</span><span class="tag">ASIL</span><span class="tag">Safety</span></div>
+              <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Automotive/FuSa" target="_blank" rel="noopener">Open FuSa Big Pictures</a>
+            </div>
           <div class="picture-media">
-            <a href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener" aria-label="Open Functional Safety Big Picture">
-              <img src="assets/fusa-preview.jpg" alt="Functional Safety Big Picture preview" />
-            </a>
-          </div>
+            <a href="https://github.com/ywinf/Big-Pictures/tree/main/Automotive/FuSa/FuSa%20BigPicture.pdf" target="_blank" rel="noopener" aria-label="Open FuSa Big Picture">
+            <img src="assets/fusa-preview.png" /></a></div>
         </article>
 
+        <!-- Cybersecurity -->
         <article class="picture">
           <div class="picture-copy">
-            <h3>Cybersecurity Big Picture</h3>
-            <p>A clear structure for automotive cybersecurity engineering, connecting threat analysis, risk treatment, security concept, implementation, validation and operations.</p>
-            <div class="tag-row"><span class="tag">ISO 21434</span><span class="tag">TARA</span><span class="tag">Vehicle Security</span></div>
-            <a class="btn" href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">Open Cybersecurity Big Picture</a>
-          </div>
+            <h3>Automotive Cybersecurity</h3>
+            <p>A clear engineering structure for ISO 21434: from TARA and risk treatment to secure architecture, implementation and continuous vehicle protection.</p>
+            <div class="tag-row"><span class="tag">ISO 21434</span><span class="tag">TARA</span><span class="tag">Security</span></div>
+              <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Automotive/Cybersecurity" target="_blank" rel="noopener">Open Cybersecurity Big Pictures</a>
+            </div>
           <div class="picture-media">
-            <a href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener" aria-label="Open Cybersecurity Big Picture">
-              <img src="assets/cybersecurity-preview.jpg" alt="Cybersecurity Big Picture preview" />
-            </a>
-          </div>
+            <a href="https://github.com/ywinf/Big-Pictures/tree/main/Automotive/Cybersecurity/Cybersecurity%20BigPicture.pdf" target="_blank" rel="noopener" aria-label="Open Cybersecurity Big Picture">
+            <img src="assets/cybersecurity-preview.png" /></a></div>
         </article>
 
+        <!-- AI in SDV -->
         <article class="picture">
           <div class="picture-copy">
-            <h3>CPU & Computer Fundamentals Big Picture</h3>
-            <p>From Turing Machine and computer architecture to CMOS logic gates, flip-flops, ALU, control unit and a custom 32-bit CPU demonstration in Logisim.</p>
-            <div class="tag-row"><span class="tag">CPU</span><span class="tag">Digital Logic</span><span class="tag">Logisim</span></div>
-            <a class="btn" href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">Open CPU Big Picture</a>
-          </div>
+            <h3>AI in Software-Defined Vehicles (SDV)</h3>
+            <p>End-to-end view from sensors → data processing → AI models → execution platform → vehicle actions, including safety (FTTI), cybersecurity and OTA lifecycle integration.</p>
+            <div class="tag-row"><span class="tag">AI</span><span class="tag">SDV</span><span class="tag">Architecture</span></div>
+              <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Automotive/AI%20in%20SDV" target="_blank" rel="noopener">Open AI in SDV Big Pictures</a>
+            </div>
           <div class="picture-media">
-            <a href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener" aria-label="Open CPU Big Picture">
-              <img src="assets/cpu-preview.jpg" alt="CPU Big Picture preview" />
-            </a>
-          </div>
+            <a href="https://github.com/ywinf/Big-Pictures/tree/main/Automotive/AI%20in%20SDV/AI%20in%20SDV.combined%20version.png" target="_blank" rel="noopener" aria-label="Open AI in SDV Big Picture">
+            <img src="assets/ai-sdv-preview.png" /></a></div>
+        </article>
+
+        <!-- CPU -->
+        <article class="picture">
+          <div class="picture-copy">
+            <h3>CPU & Computer Fundamentals</h3>
+            <p>From logic gates and flip-flops to ALU, control unit and full CPU system — including a practical 32-bit CPU implementation for visualization and learning.</p>
+            <div class="tag-row"><span class="tag">CPU</span><span class="tag">Digital Logic</span><span class="tag">Architecture</span></div>
+              <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Custom_32Bits_CPU_Demo" target="_blank" rel="noopener">Open CPU Big Pictures</a>
+            </div>
+          <div class="picture-media">
+            <a href="https://github.com/ywinf/Big-Pictures/blob/main/Custom_32Bits_CPU_Demo/doc/BigPicture_from%20turing%20machine%20to%20a%20real%20cpu.pdf" target="_blank" rel="noopener" aria-label="Open CPU Big Picture">
+            <img src="assets/cpu-preview.png" /></a></div>
+        </article>
+
+        <!-- Programmer View -->
+        <article class="picture">
+          <div class="picture-copy">
+            <h3>A Programmer’s View: Source Code → Execution</h3>
+            <p>Complete flow from source code to running program: compilation, linking, ELF structure, loading, memory layout and execution inside OS process space.</p>
+            <div class="tag-row"><span class="tag">Compiler</span><span class="tag">ELF</span><span class="tag">Execution</span></div>
+              <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Generic" target="_blank" rel="noopener">Open Programmer's View Big Pictures</a>
+            </div>
+          <div class="picture-media">
+            <a href="https://github.com/ywinf/Big-Pictures/blob/main/Generic/A_programmer_view.pdf" target="_blank" rel="noopener" aria-label="Open Programmer's View Big Picture">
+            <img src="assets/programmer-view-preview.png" /></a></div>
+        </article>
+
+        <!-- Git -->
+        <article class="picture">
+          <div class="picture-copy">
+            <h3>Git — How it really works</h3>
+            <p>Clear mental model of Git: working directory, staging area, local/remote repository and key workflows like commit, merge, rebase and collaboration.</p>
+            <div class="tag-row"><span class="tag">Git</span><span class="tag">Workflow</span><span class="tag">DevOps</span></div>
+              <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Generic" target="_blank" rel="noopener">Open Git Big Pictures</a>
+            </div>
+          <div class="picture-media">
+            <a href="https://github.com/ywinf/Big-Pictures/blob/main/Generic/Git_Demo.pdf" target="_blank" rel="noopener" aria-label="Open Git Big Picture">
+            <img src="assets/git-preview.png" /></a></div>
+        </article>
+
+        <!-- CMake -->
+        <article class="picture">
+          <div class="picture-copy">
+            <h3>CMake & Make — Build System Big Picture</h3>
+            <p>From CMake configuration to native build tools (Make/Ninja): targets, dependencies, linking and complete build pipeline in a structured view.</p>
+            <div class="tag-row"><span class="tag">CMake</span><span class="tag">Make</span><span class="tag">Build System</span></div>
+              <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Generic" target="_blank" rel="noopener">Open CMake & Make Big Pictures</a>
+            </div>
+          <div class="picture-media">
+            <a href="https://github.com/ywinf/Big-Pictures/blob/main/Generic/CMake_Make.pdf" target="_blank" rel="noopener" aria-label="Open CMake & Make Big Picture">
+            <img src="assets/cmake-preview.png" /></a></div>
         </article>
       </div>
     </section>
