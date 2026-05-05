@@ -84,7 +84,7 @@
       grid-template-columns: 170px minmax(0, 1fr);
       gap: 38px;
       align-items: center;
-      margin-top: 90px;
+      margin-top: 110px;
       max-width: 1060px;
     }
 
@@ -216,7 +216,6 @@
     .highlight-media img {
       width: 100%;
       height: auto;
-      object-fit: contain;
       transition: transform .25s ease;
     }
 
@@ -366,11 +365,19 @@
       background: #0f141b;
       min-height: 280px;
     }
-    .picture-media img {
+    .picture-media img,
+    .preview-video {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform .25s ease;
+    }
+
+    .preview-video {
+      display: block;
+      min-height: 280px;
+      background: #0f141b;
+      cursor: pointer;
     }
     .picture-media a:hover img { transform: scale(1.025); }
 
@@ -420,18 +427,10 @@
       main { padding: 48px 18px; }
       .card, .highlight-inner { padding: 22px; }
       .picture { padding: 16px; gap: 18px; }
-      .picture-media a { min-height: 210px; }
+      .picture-media a, .preview-video { min-height: 210px; }
       .section-head { display: block; }
     }
   </style>
-  <!-- Google Analytics (place here, at the end of head) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EYX3YC1VM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-1EYX3YC1VM');
-  </script>
 </head>
 <body>
   <header class="hero" id="top">
@@ -455,9 +454,7 @@
           <div class="eyebrow">Principal Automotive Software Architect · Big-Picture Methodology Creator</div>
           <h1>Making complex vehicle software visible, understandable and actionable.</h1>
           <p class="subtitle">I create professional Big Pictures for AI-enabled automotive systems, AUTOSAR CP/AP, Functional Safety and Cybersecurity — helping engineers, architects and leaders build a shared mental model fast.</p>
-          <p style="margin-top:-10px; color:#9fd4ff; font-weight:700;">The success of AI in vehicles is not defined by the model — but by the architecture that integrates it.</p>
           <div class="hero-proof">
-            <div class="hero-proof">
             <span class="proof-pill">AUTOSAR CP/AP</span>
             <span class="proof-pill">Functional Safety</span>
             <span class="proof-pill">Cybersecurity</span>
@@ -618,8 +615,10 @@
               <a class="btn" href="https://github.com/ywinf/Big-Pictures/tree/main/Custom_32Bits_CPU_Demo" target="_blank" rel="noopener">Open CPU Big Pictures</a>
             </div>
           <div class="picture-media">
-            <a href="https://github.com/ywinf/Big-Pictures/blob/main/Custom_32Bits_CPU_Demo/doc/BigPicture_from%20turing%20machine%20to%20a%20real%20cpu.pdf" target="_blank" rel="noopener" aria-label="Open CPU Big Picture">
-            <img src="assets/cpu-preview.png" /></a></div>
+            <video class="preview-video" poster="assets/cpu-preview.png" controls preload="metadata">
+              <source src="assets/cpu_demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video></div>
         </article>
 
         <!-- Programmer View -->
