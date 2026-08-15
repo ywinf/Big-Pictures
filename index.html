@@ -12,8 +12,8 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yingtao Wang | Big-Picture Master</title>
-  <meta name="description" content="Personal Big-Picture portfolio by Yingtao Wang: Automotive AI, AUTOSAR, Functional Safety, Cybersecurity and CPU fundamentals explained through professional one-page visuals." />
+  <title>Yingtao Wang | Engineering Leadership · EOS · Big Pictures</title>
+  <meta name="description" content="Engineering leadership portfolio by Yingtao Wang: EOS Engineering Operating System, AI-enabled engineering, software platforms, systems architecture and industry-recognized Big Pictures." />
   <style>
     :root {
       --bg: #0b0f14;
@@ -401,6 +401,85 @@
       flex-wrap: wrap;
     }
 
+
+    .eos-section { margin: 0 0 76px; }
+    .eos-hero {
+      padding: 34px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(77,163,255,.13), rgba(120,214,181,.08));
+      border: 1px solid rgba(77,163,255,.28);
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .eos-kicker {
+      color: var(--accent-2);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      margin-bottom: 10px;
+    }
+    .eos-flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0 0;
+      align-items: center;
+    }
+    .eos-step {
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .eos-arrow { color: var(--accent-2); font-weight: 900; }
+    .eos-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 22px 0 28px;
+    }
+    .eos-card {
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid var(--line);
+    }
+    .eos-card b { display:block; margin-bottom: 8px; color: var(--text); }
+    .eos-card p { margin:0; font-size:14px; }
+    .eos-proof-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+    .eos-proof {
+      padding: 22px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .eos-proof h3 { font-size: 22px; }
+    .eos-proof-media {
+      margin-top: 16px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #0f141b;
+    }
+    .eos-proof-media img, .eos-proof-media video { width:100%; height:auto; display:block; }
+    .bridge {
+      margin: 28px 0 0;
+      padding: 24px 26px;
+      border-left: 4px solid var(--accent-2);
+      background: rgba(120,214,181,.06);
+      border-radius: 0 18px 18px 0;
+    }
+    .bridge h3 { margin-bottom:8px; }
+
     @media (max-width: 820px) {
       .hero { min-height: auto; }
       .hero-content, .intro, .picture, .highlight-inner { grid-template-columns: 1fr; }
@@ -427,7 +506,7 @@
       .picture:nth-child(even) .picture-media { order: initial; }
       .nav { align-items: flex-start; border-radius: 22px; }
       .nav-links { display: none; }
-      .stats, .impact-grid { grid-template-columns: 1fr; }
+      .stats, .impact-grid, .eos-grid, .eos-proof-grid { grid-template-columns: 1fr; }
       .highlight-media a { width: 100%; }
     }
 
@@ -446,9 +525,10 @@
     <div class="hero-bg"></div>
     <div class="hero-inner">
       <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#top">Yingtao Wang · Big Pictures</a>
+        <a class="brand" href="#top">Yingtao Wang · Engineering Portfolio</a>
         <div class="nav-links">
           <a href="#about">About</a>
+          <a href="#eos">EOS</a>
           <a href="#pictures">Big Pictures</a>
           <a href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
@@ -460,18 +540,19 @@
           <img src="assets/profile.jpg" alt="Portrait of Yingtao Wang" />
         </div>
         <div>
-          <div class="eyebrow">Principal Automotive Software Architect · Big-Picture Methodology Creator</div>
-          <h1>Making complex vehicle software visible, understandable and actionable.</h1>
-          <p class="subtitle">I create professional Big Pictures for AI-enabled automotive systems, AUTOSAR CP/AP, Functional Safety and Cybersecurity — helping engineers, architects and leaders build a shared mental model fast.</p>
+          <div class="eyebrow">Principal Engineering Leader · AI-Enabled Engineering · Software Platforms</div>
+          <h1>Turning engineering complexity into scalable capability.</h1>
+          <p class="subtitle">I build engineering methods, software platforms and AI-enabled workflows that make complex systems understandable, reusable and executable — from structured knowledge to architecture, implementation and validation.</p>
           <div class="hero-proof">
-            <span class="proof-pill">AUTOSAR CP/AP</span>
-            <span class="proof-pill">Functional Safety</span>
-            <span class="proof-pill">Cybersecurity</span>
-            <span class="proof-pill">AI-enabled Automotive</span>
-            <span class="proof-pill">Industry-recognized work</span>
+            <span class="proof-pill">EOS · Engineering Operating System</span>
+            <span class="proof-pill">AI-Enabled Engineering</span>
+            <span class="proof-pill">Software Platforms</span>
+            <span class="proof-pill">Systems Architecture</span>
+            <span class="proof-pill">AUTOSAR-recognized work</span>
           </div>
           <div class="hero-actions">
-            <a class="btn primary" href="#pictures">Explore Big Pictures</a>
+            <a class="btn primary" href="#eos">Explore EOS</a>
+            <a class="btn" href="#pictures">Explore Big Pictures</a>
             <a class="btn" href="#highlight">Industry Recognition</a>
             <a class="btn" href="https://github.com/ywinf/Big-Pictures" target="_blank" rel="noopener">View GitHub Repo</a>
             <a class="btn" href="https://www.linkedin.com/in/yingtao-wang" target="_blank" rel="noopener">LinkedIn Profile</a>
@@ -484,9 +565,9 @@
   <main>
     <section class="intro" id="about">
       <div class="card">
-        <h2>Short introduction</h2>
-        <p><span class="strong">My background:</span> I work in the AI-enabled automotive software area, with deep experience in vehicle software platforms, AUTOSAR Classic & Adaptive, Functional Safety, system architecture and embedded software delivery.</p>
-        <p><span class="strong">My creator role:</span> I created the Big-Picture Methodology to make difficult engineering topics understandable fast — not by oversimplifying them, but by showing the right structure, lifecycle, dependencies and decision points on one page.</p>
+        <h2>Engineering leadership through system thinking</h2>
+        <p><span class="strong">My background:</span> 25+ years across embedded software, software platforms, systems architecture, Functional Safety and international engineering leadership.</p>
+        <p><span class="strong">My focus today:</span> combining engineering knowledge, reusable architecture and AI-enabled workflows to strengthen how complex systems are designed, reviewed, implemented and validated.</p>
         <div class="focus-list">
           <div class="focus-item"><div class="num">1</div><div><b>For experts</b><br /><span>Use it as a common reference model for discussion, reviews and onboarding.</span></div></div>
           <div class="focus-item"><div class="num">2</div><div><b>For managers</b><br /><span>Understand the architecture and methodology without getting lost in implementation details.</span></div></div>
@@ -494,14 +575,62 @@
         </div>
       </div>
       <div class="card">
-        <h3>Why Big Pictures still matter in the AI era</h3>
-        <p>AI can generate answers quickly. But engineering still needs judgment, architecture, constraints and a shared mental model. Big Pictures help teams ask better questions and make safer technical decisions.</p>
+        <h3>From knowledge to execution</h3>
+        <p>Big Pictures make complex engineering knowledge visible. EOS takes the next step: structuring that knowledge so human and AI engineering teams can use it consistently across architecture, review, implementation and validation.</p>
         <div class="stats">
           <div class="stat"><b>CP/AP</b><span>AUTOSAR methodology made visible</span></div>
           <div class="stat"><b>FuSa</b><span>ISO 26262 lifecycle as mental model</span></div>
           <div class="stat"><b>Cyber</b><span>Automotive cybersecurity structure</span></div>
           <div class="stat"><b>CPU</b><span>From logic gates to computer systems</span></div>
         </div>
+      </div>
+    </section>
+
+    <section id="eos" class="eos-section" aria-label="EOS Engineering Operating System">
+      <div class="section-head">
+        <div>
+          <h2>EOS — Engineering Operating System</h2>
+          <p>Engineering infrastructure for the AI era: a structured system around AI that connects engineering knowledge, architecture, review, implementation, validation and evidence.</p>
+        </div>
+      </div>
+
+      <div class="eos-hero">
+        <div class="eos-kicker">From AI assistance to engineering capability</div>
+        <h3>AI alone is not enough.</h3>
+        <p>EOS was created from a practical observation: stronger language models do not automatically create consistent engineering. Quality improves when AI works inside a system of engineering knowledge, reference architectures, reusable patterns, structured reviews, reference implementations and traceable workflows.</p>
+        <div class="eos-flow" aria-label="EOS engineering workflow">
+          <span class="eos-step">Knowledge</span><span class="eos-arrow">→</span>
+          <span class="eos-step">Architecture</span><span class="eos-arrow">→</span>
+          <span class="eos-step">Review</span><span class="eos-arrow">→</span>
+          <span class="eos-step">Implementation</span><span class="eos-arrow">→</span>
+          <span class="eos-step">Validation</span><span class="eos-arrow">→</span>
+          <span class="eos-step">Evidence</span>
+        </div>
+      </div>
+
+      <div class="eos-grid">
+        <div class="eos-card"><b>Engineering Knowledge</b><p>Structured domain knowledge, reference models and reusable engineering patterns.</p></div>
+        <div class="eos-card"><b>AI Engineering Team</b><p>Architect, Review and Coding Agents working through defined engineering responsibilities.</p></div>
+        <div class="eos-card"><b>Engineering Workflow</b><p>Continuous flow from engineering intent to reviewed implementation artifacts and validation.</p></div>
+        <div class="eos-card"><b>Trust & Evidence</b><p>Traceability, independent review, reference implementations and validation evidence around AI outputs.</p></div>
+      </div>
+
+      <div class="eos-proof-grid">
+        <article class="eos-proof">
+          <h3>EOS Engineering Workflow</h3>
+          <p>A real AI-powered workflow: Architect Agent → independent Review Agent → TypeScript and MISRA C++ engineering artifacts.</p>
+          <div class="eos-proof-media"><video controls preload="metadata" poster="assets/eos/eos-overview.png"><source src="assets/eos/eos-workflow-demo.mp4" type="video/mp4" />Your browser does not support the video tag.</video></div>
+        </article>
+        <article class="eos-proof">
+          <h3>First Engineering Proof: Body Control Framework</h3>
+          <p>The first end-to-end proof of EOS: reusable SDV architecture, distributed execution, diagnostics, Functional Safety supervision, fault injection and recovery.</p>
+          <div class="eos-proof-media"><video controls preload="metadata" poster="assets/eos/bcm-big-picture.png"><source src="assets/eos/bcm-emulator-demo.mp4" type="video/mp4" />Your browser does not support the video tag.</video></div>
+        </article>
+      </div>
+
+      <div class="bridge">
+        <h3>Big Pictures were the beginning. EOS is the next step.</h3>
+        <p>Big Pictures create a shared mental model. EOS turns structured engineering knowledge into reusable engineering capability — so human engineering teams and AI engineering teams can strengthen each other through one consistent methodology.</p>
       </div>
     </section>
 
@@ -526,7 +655,7 @@
       <div class="section-head">
         <div>
           <h2>Impact & Results</h2>
-          <p>Big Pictures are not only visuals — they are practical tools for alignment, onboarding, architectural discussions and decision-making in complex automotive software environments.</p>
+          <p>The portfolio combines engineering knowledge, reusable architecture and working proof — from industry-recognized Big Pictures to EOS and executable reference platforms.</p>
         </div>
       </div>
       <div class="impact-grid">
@@ -672,8 +801,8 @@
     </section>
 
     <footer class="footer">
-      <div>© 2026 Yingtao Wang · Big Pictures</div>
-      <div>Built for GitHub Pages · Clear mental models for complex engineering topics</div>
+      <div>© 2026 Yingtao Wang · Engineering Portfolio</div>
+      <div>Engineering knowledge · EOS · Big Pictures · Reusable engineering capability</div>
     </footer>
   </main>
 </body>
